@@ -1,0 +1,139 @@
+$purp: #5d123f;
+$purpD: #4f0e2f;
+$grey: #404041;
+@font-face{font-family:"Market"; src:url('../font/Market_Deco.ttf')}
+@font-face{font-family:"Alpaca"; src:url('../font/Alpaca Solidify.otf')}
+@import 'header';
+@import 'main';
+@import 'footer';
+
+
+body{
+background:$grey;
+}
+
+.list-inline{
+margin-bottom:0;
+}
+
+.container-fluid{
+padding:0;
+}
+
+.response{
+min-width:1910px;
+}
+
+
+@media(max-width:1024px){
+
+		header{
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		}
+		
+		#back-head{
+			height:450px;
+		}
+		
+		.response{
+		min-width:1024px;
+		}
+
+		#logo{ font-size:40px;}
+
+		#social-icons{
+			img{
+				height:45px;
+				width:45px;
+			
+			}
+		}
+		
+		.menu{
+			li{
+			
+			  padding-left:25px;
+				a{
+					font-size:22px;
+				
+				}
+			}
+		
+		
+		}
+		
+		.menu-fixed{
+		
+			height:75px;
+			
+			.logo{
+				 font-size:24px;
+			}
+			
+			.link-fixed{
+			
+				li{
+					padding-top:18px;
+					padding-right:2px;
+					padding-bottom:0;
+					
+					&:nth-of-type(1){
+					 padding-right: 0;	
+					}
+					
+					a{
+					
+					font-size:16px;
+					
+					}
+				}
+			
+			
+			}
+			
+			.social-fixed{
+			
+				li{
+				
+					padding:0;
+				}
+				img{
+					height:30px;
+					width:30px;
+				
+				}
+			
+			}
+		
+		}
+		
+		.slide{
+				width:224px;
+				height:224px;
+				border-radius:112px;
+				
+			.slide-title{
+				p{
+				
+			     font-size:18px;
+				 }
+			
+			}
+			
+			img{
+				
+				width:inherit;
+				height:inherit;
+			}
+		
+		}
+		
+		
+		.main{
+		
+		 width:80%;
+		
+		}
+
+}

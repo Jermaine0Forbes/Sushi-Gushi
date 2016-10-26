@@ -1,0 +1,15 @@
+{
+  "name": "gushi",
+  "version": "1.0.0",
+  "description": "sushi gushi website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jermaine Forbes",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
