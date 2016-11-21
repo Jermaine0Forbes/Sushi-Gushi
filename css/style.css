@@ -6,10 +6,8 @@
   font-family: "Alpaca";
   src: url("../font/Alpaca Solidify.otf"); }
 
-header {
-  background: url("../img/sushi-header.png");
-  background-size: 100% 100%;
-  width: 100%; }
+:root {
+  font-size: 16px; }
 
 #back-head {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+2,000000+47,000000+100&0.9+2,0.8+48,0.5+100 */
@@ -21,7 +19,7 @@ header {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#80000000',GradientType=0 );
   /* IE6-9 */
-  height: 600px; }
+  min-height: 600px; }
 
 #header-margin {
   margin-top: 50px; }
@@ -60,13 +58,16 @@ header {
       -ms-filter: "FlipH";
       right: 0; }
   .menu .list-inline {
-    margin: 0; }
+    margin: 0;
+    display: flex;
+    padding: 0.8em 0; }
   .menu li {
-    padding: 10px 0 10px 85px; }
+    flex: 1 1 0; }
     .menu li:nth-of-type(1) {
       padding-left: 0; }
   .menu a {
-    font-size: 32px;
+    font-size: 1.7rem;
+    text-align: center;
     color: white;
     text-transform: capitalize; }
     .menu a:hover {
@@ -86,14 +87,17 @@ header {
     background: rgba(93, 18, 83, 0.5);
     height: 67px;
     transition: height 0.5s; }
+    .menu-fixed .bottom-header ul {
+      height: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
   .menu-fixed .logo {
     font-family: "Alpaca", arial, sans-serif;
     padding: 11px 0;
     font-size: 32px;
     color: white;
     text-transform: uppercase; }
-  .menu-fixed .link-fixed li {
-    padding: 18px 10px; }
   .menu-fixed .social-fixed {
     padding: 8.5px 0; }
   .menu-fixed img.arrow {
@@ -113,6 +117,17 @@ header {
     text-transform: capitalize; }
     .menu-fixed a:hover {
       text-decoration: none; }
+  .menu-fixed .menu-btn button {
+    background: transparent;
+    color: white;
+    font-size: 2rem;
+    border-style: none;
+    margin-top: 10px;
+    border-radius: 0.25em;
+    transition: all 0.5s; }
+    .menu-fixed .menu-btn button:hover {
+      background: white;
+      color: rgba(79, 14, 47, 0.8); }
 
 #slide-collection {
   margin-top: 30px; }
@@ -145,7 +160,14 @@ header {
   background: #5d123f;
   text-transform: uppercase;
   height: 142px;
-  text-align: center; }
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+  #banner .left-tri {
+    align-self: flex-start; }
+  #banner .right-tri {
+    align-self: flex-end; }
   #banner img:last-of-type {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -205,21 +227,21 @@ section {
   text-transform: capitalize; }
 
 footer {
-  height: 142px;
+  min-height: 8.88em;
   background: #4f0e2f;
-  display: block; }
+  display: flex; }
 
-.foot-back ul {
-  padding: 50px 0; }
-  .foot-back ul li {
-    margin-left: 105px; }
-    .foot-back ul li:nth-of-type(1) {
-      margin-left: 0; }
-
-.foot-back a {
-  color: white;
-  font-size: 27px;
-  text-transform: capitalize; }
+.foot-back {
+  width: 100%; }
+  .foot-back ul {
+    min-height: 8.88em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .foot-back a {
+    color: white;
+    font-size: 27px;
+    text-transform: capitalize; }
 
 body {
   background: #404041; }
@@ -230,8 +252,8 @@ body {
 .container-fluid {
   padding: 0; }
 
-.response {
-  min-width: 1910px; }
+.row {
+  width: 100%; }
 
 @media (max-width: 1024px) {
   header {
