@@ -13,71 +13,97 @@ section{
 		display:inline-block;
 		text-align:center;
 		margin:60px auto;
-		font-size:40px;
-		
+		font-size:2.5rem;
+
 		transition: 1s color;
 		-moz-transition: 0.5s color;
 		&:hover{
 			text-decoration:none;
 			color:$grey;
-		
+
 		}
 	}
-	
+
 }
 
 .events{
 
  color:white;
  background:$grey;
-
+ display:flex;
  margin-bottom:20px;
  padding: 15px 0;
+ justify-content:flex-start;
 	h3{
-	
+
 		text-transform:uppercase;
 		margin-top:0;
-		
+
 	}
 
-	
-	.event-img{
-	 
-		 img{
-			width:100%;
-		 
-		 }
-	
-	}
 
-	
+
+
+
 	p{
 		height:180px;
 		overflow:hidden;
-	
-	
+
+
 	}
 
 }
 
+.events-description{
+	// margin-left:5.25em;
+	 padding:0 15px;
+	min-width:27em;
+	max-width:37em;
+}
+
+.event-img{
+ height:15.13em;
+ width:19.19em;
+ padding:0 15px;
+
+	 img{
+		width:100%;
+
+	 }
+
+}
 
 
 .dish-list{
+display:flex;
+flex-flow:flex-start;
+padding-top:15px;
+	.dish-img{
+		width:19em;
+		height:15em;
+		padding:0 15px;
+	}
 
-
+	.dish-description{
+		width:34.69em;
+		height:15.13em;
+		overflow: hidden;
+	}
 		img{
 			width:100%;
-		
+
 		}
-	
+
 		a{
-		
-		font-size:24px;
+
+		font-size:1.5rem;
 		color:black;
 		text-transform:capitalize;
 			&:hover{
-			
+
 			}
 		}
-	
+
+
+
 	}

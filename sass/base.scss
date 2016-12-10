@@ -1,0 +1,52 @@
+:root,body{
+	font-size:16px;
+	transition: font-size 0.5s;
+}
+
+body{
+background:$grey;
+}
+
+.list-inline{
+margin-bottom:0;
+}
+
+.container-fluid{
+padding:0;
+}
+
+.row{
+	width:100%;
+}
+
+.response{
+ min-width:1800px;
+}
+
+h1,.h1{
+	font-size:2.25rem;
+}
+
+h2,.h2{
+	font-size:1.88rem;
+}
+
+h3,.h3{
+	font-size:1.5rem;
+}
+
+h4,.h4{
+	font-size:1.3rem;
+}
+
+h5,.h5{
+	font-size:0.88rem;
+}
+
+h6,.h6{
+	font-size:0.75rem;
+}
+
+a:hover, a:focus{
+	text-decoration:none;
+}
